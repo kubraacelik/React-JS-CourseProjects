@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+.App {
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.searchDiv {
+  border: 3px solid #eb984e;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #eb984e;
+}
+
+.searchDiv form {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchDiv form label {
+  font-size: 20px;
+  text-align: center;
+}
+
+.searchDiv form input {
+  padding: 8px;
+  font-size: 17px;
+  margin: 0px 200px;
+}
