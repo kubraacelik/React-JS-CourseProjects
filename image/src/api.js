@@ -15,4 +15,5 @@ const searchImages = async (term) => {
   return response.data.results; // Unsplash API'den gelen yanıt içindeki fotoğraf sonuçlarını temsil eden bir diziye erişimi sağlar.
 };
 
+//başka bir componentte kullanılmasını istiyorsak export default; yazmamız lazım
 export default searchImages;
