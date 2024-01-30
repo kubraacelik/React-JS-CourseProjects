@@ -5,10 +5,10 @@
 }
 
 .searchDiv {
-  border: 3px solid #eb984e;
+  border: 3px solid #ec7063;
   border-radius: 5px;
   padding: 15px;
-  background-color: #eb984e;
+  background-color: #ec7063;
 }
 
 .searchDiv form {
@@ -25,4 +25,15 @@
   padding: 8px;
   font-size: 17px;
   margin: 0px 200px;
+}
+
+.imageList {
+  columns: 250px 4;
+  column-gap: 10px;
+}
+
+.imageListImg {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
