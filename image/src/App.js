@@ -2,7 +2,7 @@ import "./App.css";
 import SearchHeader from "./SearchHeader";
 import searchImages from "./api";
 import { useState } from "react";
-import ImageList from "./components/ImageItem";
+import ImageList from "./components/ImageList";
 
 function App() {
   const [images, setImages] = useState([]);
