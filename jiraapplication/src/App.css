@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap");
+
+* {
+  background-color: #d1f2eb;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+}
+
+.task-create {
+  width: 450px;
+}
+
+.task-update {
+  width: 100%;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-label {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.task-input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.task-button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #2ecc71;
+  border-radius: 10px;
+  background-color: #16a085;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.update-button {
+  background-color: #f39c12;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.task-show {
+  border: 1px solid #2ecc71;
+  border-radius: 30px;
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.task-title {
+  margin-bottom: 5px;
+}
+
+.task-delete {
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  padding: 5px;
+  margin-right: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.task-edit {
+  width: 100px;
+  border: none;
+  border-radius: 30px;
+  padding: 5px;
+  background-color: #0000ff;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
