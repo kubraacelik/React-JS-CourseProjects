@@ -30,6 +30,8 @@ function App() {
 
   const editTaskById = (id, updatedTitle, updatedTaskDesc) => {
     const UpdatedTasks = tasks.map((task) => {
+      //eğer task'ın id'si bana parametre olarak gelen id'ye eşitse artık id, title ve taskDesc kısmı
+      //yeni yazılan değerlere eşit oluyor. Eşit değilse normal task dönüyor
       if (task.id === id) {
         return { id: id, title: updatedTitle, taskDesc: updatedTaskDesc };
       }
