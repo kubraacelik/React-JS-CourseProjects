@@ -1,7 +1,9 @@
 import { useState } from "react";
 
 function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
+  //düzenleme kısmı için task varsa o anki title gelsin yoksa boş gelsin
   const [title, setTitle] = useState(task ? task.title : "");
+  //düzenleme kısmı için task varsa o anki taskDesc gelsin yoksa boş gelsin
   const [taskDesc, setTaskDesc] = useState(task ? task.taskDesc : "");
 
   const handleChange = (event) => {
@@ -15,12 +17,12 @@ function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    //güncelle true ise güncelleme fonk çalışsın, false ise oluştur fonk çalışsın
     if (taskformUpdate) {
       onUpdate(task.id, title, taskDesc);
     } else {
       onCreate(title, taskDesc);
     }
-
     //butona bastıktan sonra inputlardaki değerler silinsin
     setTitle("");
     setTaskDesc("");
@@ -28,6 +30,7 @@ function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
 
   return (
     <div>
+      {/* birbirlerine benzedikleri için yapıldı. taskformUpdate true ise düzenleme kısmı olsun false ise form kısmı gibi olsun */}
       {taskformUpdate ? (
         <div className="task-update">
           <h3>Lütfen Taskı Düzenleyiniz!</h3>
