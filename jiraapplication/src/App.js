@@ -21,6 +21,7 @@ function App() {
 
   //sil butonu
   const deleteTaskById = (id) => {
+    //taskları bastığım id hariç diğerlerini getir şeklinde filtreliyoruz
     const afterDeletingTasks = tasks.filter((task) => {
       return task.id !== id;
     });
