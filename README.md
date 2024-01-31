@@ -8,6 +8,14 @@ In the project, we gave a form. Whatever we write to the input in the form will 
 
 ![Ekran Görüntüsü (6)](https://github.com/kubraacelik/React-JS/assets/101054783/4dcaaf64-6efb-4581-b388-1c74870fa0c3)
 
+## jiraapplication
+My project is a task authoring application. First enter the title and task for the task. When you press the Create button, it is arranged in an orderly manner with flex-wrap:wrap at the bottom. There are delete and update buttons. When you press the delete button, the others except that task are brought to the screen thanks to the filtering feature. When you press the update button, the edit section comes.
+
+![Ekran Görüntüsü (7)](https://github.com/kubraacelik/React-JS/assets/101054783/29abd285-ff73-47b5-81ab-85520858bb13)
+![Ekran Görüntüsü (8)](https://github.com/kubraacelik/React-JS/assets/101054783/b7f1f551-b6b9-41a9-8b84-ca2453808000)
+![Ekran Görüntüsü (9)](https://github.com/kubraacelik/React-JS/assets/101054783/d5e4ad99-4d7d-471c-96e5-b737aca79abd)
+
+
 ## state-project
 The project includes an application that randomly selects a set of course names and displays them on the screen. The Course component takes the courseName prop and displays the corresponding image on the screen.  The source (src) of the image is determined by the image file corresponding to the courseName prop using the courseMap object. 
 
