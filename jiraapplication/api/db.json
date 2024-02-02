@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": "43d6",
+      "title": "Mobil Uygulama Test Otomasyonu",
+      "taskDesc": "Bir mobil uygulamanın test otomasyonunu gerçekleştirin. Uygulamanın farklı ekranları arasında gezinme, kullanıcı etkileşimleri simüle etme ve hata durumlarını test etme işlemlerini otomatize edin."
+    },
+    {
+      "id": "d3f0",
+      "title": "Veri Analizi ve Raporlama",
+      "taskDesc": "Belirli bir veri seti üzerinde analiz yapın ve detaylı bir rapor oluşturun. Veri görselleştirmeleri kullanarak trendleri, istatistikleri ve anlamlı bilgileri vurgulayın. Analiz sonuçlarını anlamak için kullanıcı dostu bir raporlama arayüzü oluşturun."
+    },
+    {
+      "title": "E-Ticaret Sitesi Geliştirme",
+      "taskDesc": " E-Ticaret web sitesi oluşturun. Müşterilerin ürünleri sepete ekleyebilmeleri, ödeme yapabilmeleri ve sipariş takibi yapabilmeleri için kullanıcı dostu bir arayüz sağlayın.",
+      "id": "1a57"
+    }
+  ]
+}
