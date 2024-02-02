@@ -1,34 +1,56 @@
 import "./App.css";
 import TaskCreate from "./components/TaskCreate";
 import TaskList from "./components/TaskList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
   const [tasks, setTasks] = useState([]);
 
-  const createTask = (title, taskDesc) => {
+  const createTask = async (title, taskDesc) => {
+    //? her oluştur butonuna bastığımda yazdığım bilgileri db.json'a kaydedecek
+    const response = await axios.post("http://localhost:3000/tasks", {
+      title,
+      taskDesc,
+    });
+    console.log(response);
+
     //her yeni eleman oluştuğunda çalışsın
-    const createdTasks = [
-      ...tasks,
-      {
-        id: Math.round(Math.random() * 999999),
-        title: title,
-        taskDesc: taskDesc,
-      },
-    ];
+    const createdTasks = [...tasks, response.data];
+    debugger;
     setTasks(createdTasks);
   };
 
+  //? sayfa yenilenince kaydedilen bilgiler silinmesin ekrana gelsin, (useEffect ile kullanıldı)
+  const fetchTasks = async () => {
+    const response = await axios.get("http://localhost:3000/tasks");
+    setTasks(response.data);
+  };
+
+  useEffect(() => {
+    fetchTasks();
+  }, []);
+
   //sil butonu
-  const deleteTaskById = (id) => {
+  const deleteTaskById = async (id) => {
+    //? sil butonuna basınca yaptığım değişiklik db.json'da da değişsin
+    await axios.delete(`http://localhost:3000/tasks/${id}`);
+
     //taskları bastığım id hariç diğerlerini getir şeklinde filtreliyoruz
     const afterDeletingTasks = tasks.filter((task) => {
       return task.id !== id;
     });
+
     setTasks(afterDeletingTasks);
   };
 
-  const editTaskById = (id, updatedTitle, updatedTaskDesc) => {
+  const editTaskById = async (id, updatedTitle, updatedTaskDesc) => {
+    //? güncelle butonuna basınca yaptığım değişiklik db.json'da da değişsin
+    await axios.put(`http://localhost:3000/tasks/${id}`, {
+      title: updatedTitle,
+      taskDesc: updatedTaskDesc,
+    });
+
     const UpdatedTasks = tasks.map((task) => {
       //eğer task'ın id'si bana parametre olarak gelen id'ye eşitse artık id, title ve taskDesc kısmı
       //yeni yazılan değerlere eşit oluyor. Eşit değilse normal task dönüyor
@@ -37,6 +59,7 @@ function App() {
       }
       return task;
     });
+
     setTasks(UpdatedTasks);
   };
 
