@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #d4e6f1;
+}
+
+.firstDiv {
+  margin-right: 40px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.firstDiv button {
+  background-color: #5dade2;
+}
+
+.secondDiv button {
+  background-color: #f5b041;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  border: 1px solid #616a6b;
+  padding: 10px;
+  border-radius: 20px;
+}
