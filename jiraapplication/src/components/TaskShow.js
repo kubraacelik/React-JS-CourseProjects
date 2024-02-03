@@ -1,12 +1,18 @@
 import { useState } from "react";
 import TaskCreate from "./TaskCreate";
+import { useContext } from "react";
+import TasksContext from "../context/task";
 
-function TaskShow({ task, onDelete, onUpdate }) {
+function TaskShow({ task }) {
+  //? editTaskById ve deleteTaskById çektik ki silme ve güncelleme işlemlerini yapalım
+  const { editTaskById, deleteTaskById } = useContext(TasksContext);
+
   //güncelle butonuna basmadan önce false olsun
   const [showEdit, setShowEdit] = useState(false);
 
   const handleDeleteClick = () => {
-    onDelete(task.id);
+    //onDelete(task.id);
+    deleteTaskById(task.id);
   };
 
   const handleEditClick = () => {
@@ -17,7 +23,8 @@ function TaskShow({ task, onDelete, onUpdate }) {
   const handleSubmit = (id, updatedTitle, updatedTaskDesc) => {
     //güncelleme işlemi gerçekleştiği için false yapabiliriz
     setShowEdit(false);
-    onUpdate(id, updatedTitle, updatedTaskDesc);
+    //onUpdate(id, updatedTitle, updatedTaskDesc);
+    editTaskById(id, updatedTitle, updatedTaskDesc);
   };
 
   return (

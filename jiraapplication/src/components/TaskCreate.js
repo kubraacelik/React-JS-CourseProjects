@@ -1,6 +1,11 @@
 import { useState } from "react";
+import { useContext } from "react";
+import TasksContext from "../context/task";
 
-function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
+function TaskCreate({ task, taskformUpdate, onUpdate }) {
+  //? createTask'ı çektik ki task oluşturma işlemi yapılsın
+  const { editTaskById, createTask } = useContext(TasksContext);
+
   //düzenleme kısmı için task varsa o anki title gelsin yoksa boş gelsin
   const [title, setTitle] = useState(task ? task.title : "");
   //düzenleme kısmı için task varsa o anki taskDesc gelsin yoksa boş gelsin
@@ -20,8 +25,10 @@ function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
     //güncelle true ise güncelleme fonk çalışsın, false ise oluştur fonk çalışsın
     if (taskformUpdate) {
       onUpdate(task.id, title, taskDesc);
+      //editTaskById(task.id, title, taskDesc);
     } else {
-      onCreate(title, taskDesc);
+      //onCreate(title, taskDesc);
+      createTask(title, taskDesc);
     }
     //butona bastıktan sonra inputlardaki değerler silinsin
     setTitle("");
