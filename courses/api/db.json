@@ -1,0 +1,34 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "content": "Bu kurs, React.js'i baştan sona öğrenmek isteyenler için interaktif örnekler ve projelerle dolu bir deneyim sunar. Katılımcılar, modern web geliştirmenin temel prensiplerini kavrayacak ve kendi React projelerini geliştirmek için gerekli becerilere sahip olacaklar.",
+      "title": "React",
+      "price": 130
+    },
+    {
+      "id": "2",
+      "content": "Bu kurs, Angular framework'ünü baştan sona öğrenmek isteyenler için kapsamlı bir rehber sunar. Katılımcılar, modern web geliştirme konseptlerini anlayacak ve kendi Angular projelerini başarıyla yönetebilecekler.",
+      "title": "Angular",
+      "price": 120
+    },
+    {
+      "id": "3",
+      "content": "Bu kurs, Vue.js framework'ünü baştan sona öğrenmek isteyenler için pratik odaklı bir rehber sunar. Katılımcılar, modern web geliştirme becerilerini kazanacak ve kendi Vue.js projelerini başarıyla geliştirebilecekler.",
+      "title": "Vue.js",
+      "price": 140
+    },
+    {
+      "id": "4",
+      "content": "Bu kurs, jQuery kullanarak web geliştirme becerilerini geliştirmek isteyenlere yöneliktir. Katılımcılar, jQuery'nin temel özelliklerini öğrenerek etkileşimli ve dinamik web sayfaları oluşturabilme yeteneği kazanacaklardır.",
+      "title": "Jquery",
+      "price": 120
+    },
+    {
+      "id": "5",
+      "content": "Bu kurs, Node.js kullanarak server-side (sunucu tarafı) uygulama geliştirmeyi öğrenmek isteyenlere yöneliktir. Katılımcılar, modern web uygulamalarını güvenli ve etkili bir şekilde geliştirebilmek için gerekli becerileri kazanacaklardır.",
+      "title": "Node.js",
+      "price": 140
+    }
+  ]
+}
