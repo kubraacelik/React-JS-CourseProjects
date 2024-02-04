@@ -3,6 +3,14 @@ The project includes components that promote specific courses. Through the relev
 
 ![Ekran Görüntüsü (2)](https://github.com/kubraacelik/React-JS/assets/101054783/ceb83f93-d301-4971-b9dc-92878dcfcc0d)
 
+## courses 
+For this React application, the Axios library was used to pull courses from a JSON server. The "Loading" component was displayed when the courses were initially loaded. Course data was brought to the user. When the user clicked the delete button to delete a course, the course was removed from the screen. If all courses were deleted, the user was presented with an explanation and a "Refresh" button. When this button was clicked, all courses were reloaded.
+
+![Ekran Görüntüsü (10)](https://github.com/kubraacelik/React-JS/assets/101054783/01956bc4-79a0-429b-a2eb-579ca196db5d)
+![Ekran Görüntüsü (12)](https://github.com/kubraacelik/React-JS/assets/101054783/a3fdad44-0e3f-4b7b-ae12-a77fe3a4d954)
+![Ekran Görüntüsü (11)](https://github.com/kubraacelik/React-JS/assets/101054783/6b581cdc-4ad8-44c0-9a14-858c67ddc2b1)
+
+
 ## image
 In the project, we gave a form. Whatever we write to the input in the form will bring the desired pictures and display them on the screen thanks to the access key received from Unsplash Developer. Axios last update was made. 
 
