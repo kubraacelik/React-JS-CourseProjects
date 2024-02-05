@@ -1,5 +1,5 @@
 //! Tek bir kursun basılacağı component
-function Course({ content, title, price }) {
+function Course({ id, content, title, price, removeOneCourse }) {
   return (
     <div className="card">
       <div className="cardTitlePrice">
@@ -7,7 +7,11 @@ function Course({ content, title, price }) {
         <h4 className="cardPrice">{price} TL</h4>
       </div>
       <p>{content}</p>
-      <div></div>
+      <div>
+        <button className="cardDeleteBtn" onClick={() => removeOneCourse(id)}>
+          Sil
+        </button>
+      </div>
     </div>
   );
 }
