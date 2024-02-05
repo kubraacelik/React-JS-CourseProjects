@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 //! Tüm kurslarımın bulunduğu component
-function Courses({ courses }) {
+function Courses({ courses, removeCourse }) {
   //Ekrana gelecek olan tek kart için yapıldı
   const [index, setIndex] = useState(2);
 
