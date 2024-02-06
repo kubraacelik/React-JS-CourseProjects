@@ -8,8 +8,12 @@ For this React application, the Axios library was used to pull courses from a JS
 
 ![Ekran Görüntüsü (10)](https://github.com/kubraacelik/React-JS/assets/101054783/01956bc4-79a0-429b-a2eb-579ca196db5d)
 ![Ekran Görüntüsü (12)](https://github.com/kubraacelik/React-JS/assets/101054783/a3fdad44-0e3f-4b7b-ae12-a77fe3a4d954)
-![Ekran Görüntüsü (11)](https://github.com/kubraacelik/React-JS/assets/101054783/6b581cdc-4ad8-44c0-9a14-858c67ddc2b1)
+![Ekran Görüntüsü (11)](https://github.com/kubraacelik/React-JS/assets/101054783/8f775a66-ece8-49dd-8121-7b506d3d1118)
 
+## courses2
+Based on my Course project, a single card will appear on the screen. Forward and back buttons are activated by using React-icons library. Using the random course assign button at the top, 5 of our courses will be displayed randomly. It is set so that the same course that is currently on the screen will not come again. 
+
+![Ekran Görüntüsü (13)](https://github.com/kubraacelik/React-JS/assets/101054783/73bcd5c5-aece-4243-a32f-6bde425ac201)
 
 ## image
 In the project, we gave a form. Whatever we write to the input in the form will bring the desired pictures and display them on the screen thanks to the access key received from Unsplash Developer. Axios last update was made. 
