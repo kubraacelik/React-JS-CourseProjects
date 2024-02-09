@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: darkslateblue;
+  color: #fff;
+}
+
+.valueDiv {
+  border: 3px solid darkslateblue;
+  padding: 20px;
+  margin: 20px 700px 0px 690px;
+  font-size: 20px;
+}
+
+label {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
