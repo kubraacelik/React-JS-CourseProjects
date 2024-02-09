@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useReducer } from "react";
 import Calculate from "./calculate";
 
+//context oluşturduk
 export const NumberContext = React.createContext();
 
 //başlangıç değeri 0 atadık
@@ -25,6 +26,7 @@ function App() {
   //count = reducer fonksiyonundan dönen değer, dispatch = bunu sağlayan fonksiyonun ismi
   //reducer = çalışacak fonksiyon, initialValue = başlangıç değeri
   const [count, dispatch] = useReducer(reducer, initialValue);
+
   return (
     <div className="App">
       <NumberContext.Provider value={{ count: count, dispatch: dispatch }}>
