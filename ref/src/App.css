@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+input {
+  width: 20%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.nameDiv {
+  font-size: 18px;
+  margin-top: 15px;
+}
