@@ -5,7 +5,7 @@ function App() {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);
 
-  //number değişince slowFunc çalışsın
+  //sadece number değişince slowFunc çalışsın. tema değişince çalışmasın
   const doubleNumber = useMemo(() => {
     return slowFunc(number);
   }, [number]);
