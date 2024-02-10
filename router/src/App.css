@@ -1,10 +1,10 @@
-nav {
+.mainNav {
   background-color: darkcyan;
   padding: 20px 30px;
 }
 
 /* nav a demek nav Link anlamına geliyor */
-nav a {
+.mainNav a {
   text-decoration: none;
   color: white;
   margin-right: 25px;
@@ -12,7 +12,7 @@ nav a {
 }
 
 /* NavLink'te hangisi aktif ise yani hangisine basılmışsa onun css'i bunlar olsun */
-nav a.active {
+.mainNav a.active {
   font-weight: bold;
   font-size: 25px;
 }
