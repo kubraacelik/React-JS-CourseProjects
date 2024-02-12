@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
+      {/* Her girdiğim sayfada navbar ve footer'ın olmasını istedğim için buraya ekledim */}
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
