@@ -1,3 +1,12 @@
+## burger - EpicCrunch Burger
+My project is called EpicCrunch Burger. I used React.js, React Routers in my project. I added Navbar and Footer components to my App.js page to be valid on every page. I imported Routes and Routes. There is an "Order Now" button on the homepage. When I press the button, it automatically sends it to the menu in the navbar. I wrote all the data in the menu section one by one as objecy-t in my Data.js page. It has name, image, content and price. In the about us section, there are interior and exterior pictures of the place I imagined and information about the place. In the contact section, I divided the page into two with flex:50%. There is another picture of the place on the left side and the form on the right side. In this way, we can contact the venue.
+
+![Ekran Görüntüsü (14)](https://github.com/kubraacelik/React-JS/assets/101054783/536e6c39-4207-461b-bc86-884433dd42ef)
+![Ekran Görüntüsü (15)](https://github.com/kubraacelik/React-JS/assets/101054783/f6707176-0d0f-4263-8af0-5813b6c9ce59)
+![Ekran Görüntüsü (17)](https://github.com/kubraacelik/React-JS/assets/101054783/816ead6c-b3fd-49c9-80cd-d804f4c79d20)
+![Ekran Görüntüsü (18)](https://github.com/kubraacelik/React-JS/assets/101054783/ff95c36f-09f3-4aa3-a4db-4f24dc8885ed)
+![Ekran Görüntüsü (19)](https://github.com/kubraacelik/React-JS/assets/101054783/34760323-ee5d-4280-8fdb-74695583bc9d)
+
 ## cards
 The project includes components that promote specific courses. Through the relevant files and widgets, information about courses on topics such as Angular, Bootstrap, C# and Frontend are shown. There are also descriptions and images for each course. The aim of the project is to understand component and props logic.
 
