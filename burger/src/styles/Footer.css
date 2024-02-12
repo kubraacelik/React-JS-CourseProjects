@@ -4,4 +4,19 @@
   background-color: #922b21;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.socialMedia svg {
+  color: white;
+  margin: 20px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.footer p {
+  color: white;
+  font-size: 17px;
 }
