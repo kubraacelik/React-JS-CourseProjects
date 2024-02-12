@@ -8,6 +8,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="main">
         <img src={BurgerLogo} alt="" />
+        <div className="nameDiv">EpicCrunch Burger</div>
         <div className="mainLink">
           <Link to="/">Anasayfa</Link>
           <Link to="/menu">Menü</Link>

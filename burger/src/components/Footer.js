@@ -12,7 +12,7 @@ const Footer = () => {
         <InstagramIcon />
         <XIcon />
       </div>
-      <p>Tüm Hakları Saklıdır</p>
+      <p>Tüm Hakları Saklıdır. | EpicCrunch Burger</p>
     </div>
   );
 };
