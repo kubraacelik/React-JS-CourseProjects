@@ -33,6 +33,7 @@ const Contact = () => {
             placeholder="Lütfen Mesajınızı Giriniz..."
             autoComplete="off"
           ></textarea>
+          <button>GÖNDER</button>
         </form>
       </div>
     </div>
