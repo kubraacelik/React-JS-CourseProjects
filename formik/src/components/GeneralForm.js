@@ -7,9 +7,11 @@ const onSubmit = async (values, actions) => {
   console.log(values);
   console.log(actions);
 
+  //butona tekrar 1 sn sonra basabilirim ve butona bastıktan 1 sn sonra form temizlenecek
   await new Promise((resolve) => {
     setTimeout(resolve, 1000);
   });
+  actions.resetForm();
 };
 
 function GeneralForm() {
