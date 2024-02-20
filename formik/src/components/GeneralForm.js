@@ -2,6 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import "../App.css";
 import { basicSchema } from "../schemas";
+import { Link } from "react-router-dom";
 
 //submit ile ilgili ayarlamalarımız burada olacak.
 //values = input'a girdiğim değerler, actions = form resetleme gibi aksiyonlar yer alıyor.
@@ -95,6 +96,9 @@ function GeneralForm() {
       <button disabled={isSubmitting} type="submit">
         Kaydet
       </button>
+      <Link className="formLink" to="/portal">
+        Portala Git
+      </Link>
     </form>
   );
 }
