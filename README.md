@@ -7,6 +7,12 @@ My project is called EpicCrunch Burger. I used React.js, React Routers in my pro
 ![Ekran Görüntüsü (18)](https://github.com/kubraacelik/React-JS/assets/101054783/ff95c36f-09f3-4aa3-a4db-4f24dc8885ed)
 ![Ekran Görüntüsü (19)](https://github.com/kubraacelik/React-JS/assets/101054783/34760323-ee5d-4280-8fdb-74695583bc9d)
 
+## formik
+We opened 2 components named GeneralForm and PortalForm. In these components react-router-dom and react formik were used. In GeneralForm there are labels and inputs named E-mail, Age, Password, Password Repeat and in PortalForm there are labels and inputs named Username, Your School and Checkbox for User Condition. There is an onSubmit function that will run when the form is submitted. After writing the form values and form actions to the console, there is a 1 second wait time and then a reset of the form. useFormik hook manages the state of the form and returns a set of functions and values for the form elements. values contains the values in the form, errors contains error conditions, isSubmitting contains the submission status of the form, handleChange contains a function to listen for input changes and handleSubmit contains a function to submit the form.
+
+![Ekran Görüntüsü (21)](https://github.com/kubraacelik/React-JS/assets/101054783/1fc70d30-e4a6-462d-a25a-dd94e71ff0f2)
+![Ekran Görüntüsü (22)](https://github.com/kubraacelik/React-JS/assets/101054783/0a19d0a7-3428-4e05-aca4-9eeed973817f)
+
 ## cards
 The project includes components that promote specific courses. Through the relevant files and widgets, information about courses on topics such as Angular, Bootstrap, C# and Frontend are shown. There are also descriptions and images for each course. The aim of the project is to understand component and props logic.
 
