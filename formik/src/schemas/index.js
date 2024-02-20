@@ -2,6 +2,7 @@ import * as yup from "yup";
 
 const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/;
 
+// GeneralFrom için olan kısım
 export const basicSchema = yup.object().shape({
   email: yup
     .string()
@@ -23,4 +24,19 @@ export const basicSchema = yup.object().shape({
     .string()
     .oneOf([yup.ref("password")], "Şifreler eşleşmiyor")
     .required("Tekrar şifre girmek zorunludur"),
+});
+
+// PortalForm için olan kısım
+export const advancedSchema = yup.object().shape({
+  username: yup
+    .string()
+    .min(3, "Kullanıcı Adı minimum 3 karakter uzunluğunda olmalıdır")
+    .required("Kullanıcı Adı zorunludur"),
+  university: yup
+    .string()
+    .oneOf(["bogazici", "gsu", "odtü", "itü"], "Lütfen Üniversitenizi Seçiniz ")
+    .required("Lütfen üniversitenizi seçin"),
+  isAccepted: yup
+    .boolean()
+    .oneOf([true], "Lütfen kullanım koşullarını kabul ediniz"),
 });
