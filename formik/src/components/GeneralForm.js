@@ -3,6 +3,8 @@ import { useFormik } from "formik";
 import "../App.css";
 import { basicSchema } from "../schemas";
 
+//submit ile ilgili ayarlamalarımız burada olacak.
+//values = input'a girdiğim değerler, actions = form resetleme gibi aksiyonlar yer alıyor.
 const onSubmit = async (values, actions) => {
   console.log(values);
   console.log(actions);
@@ -42,7 +44,7 @@ function GeneralForm() {
           // email yanlış girilmişse input-error class'ını ver
           className={errors.email ? "input-error" : ""}
         />
-        {/* email yazılmamışsa hata mesajı ver */}
+        {/* email yazılmamışsa error class'ını ver, hata mesajı ver */}
         {errors.email && <p className="error">{errors.email}</p>}
       </div>
       <div className="inputDiv">
@@ -89,6 +91,7 @@ function GeneralForm() {
           <p className="error">{errors.confirmPassword}</p>
         )}
       </div>
+      {/* işlem bitene kadar butona basılmasın */}
       <button disabled={isSubmitting} type="submit">
         Kaydet
       </button>
