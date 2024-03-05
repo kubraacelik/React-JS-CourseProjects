@@ -1,5 +1,4 @@
 import { Container, Toolbar } from "@mui/material";
-import "./App.css";
 import AppBar from "@mui/material/AppBar";
 import Grid from "@mui/material/Grid";
 import Course from "./Course";
@@ -7,6 +6,7 @@ import ReactJS from "./images/reactjs.jpg";
 import Angular from "./images/angular.jpg";
 import VueJS from "./images/vuejs.jpg";
 import Jquery from "./images/jquery.jpg";
+import "./App.css";
 
 function App() {
   return (
