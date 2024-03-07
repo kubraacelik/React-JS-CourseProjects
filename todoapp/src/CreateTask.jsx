@@ -2,13 +2,14 @@ import React from "react";
 import { useState } from "react";
 
 export default function CreateTask(props) {
+
   const [task, setTask] = useState({
     title: "",
     content: "",
   });
 
   function detectChange(event) {
-    // name, value = event.target'taki name ve value değerlerini ayırır
+    // name, value = event.target'taki name (yani title ve content) ve value (girdiğim değer) değerlerini ayırır
     const { name, value } = event.target;
     // prevTask : önceki değer
     setTask((prevTask) => {
@@ -20,7 +21,11 @@ export default function CreateTask(props) {
   }
 
   function submitTask(event) {
-    props.onAdd(task)
+    props.onAdd(task);
+    setTask({
+      title: "",
+      content: "",
+    });
     event.preventDefault();
   }
 
@@ -43,9 +48,11 @@ export default function CreateTask(props) {
           rows={3}
           placeholder="İşinizi Yazınız"
         ></textarea>
-        <button className="btn btn-primary todoButton" onClick={submitTask}>
-          Ekle
-        </button>
+        <div className="text-center">
+          <button className="btn btn-primary todoButton" onClick={submitTask}>
+            Ekle
+          </button>
+        </div>
       </form>
     </div>
   );
