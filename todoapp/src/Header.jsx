@@ -6,7 +6,7 @@ function Header() {
     <header>
       <h1>
         <AssignmentIcon />
-        ToDo Uygulaması
+        To Do Uygulaması
       </h1>
     </header>
   );
