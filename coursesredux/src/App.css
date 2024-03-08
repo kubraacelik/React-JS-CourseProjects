@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: violet;
+    color: white;
+}
+
+.navbar h3{
+    font-size: 25px;
+}
+
+.navDiv {
+    position: relative;
+}
+
+.itemsIcon {
+    position: absolute;
+    bottom: 33px;
+    right: 8px;
+}
+
+.itemsDiv{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    width: 20px;
+    border-radius: 50%;
+}
