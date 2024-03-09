@@ -21,7 +21,7 @@ const courseItems = [
     quantity: 1,
   },
   {
-    id: "1",
+    id: "4",
     title: "CSS Eğitimi",
     price: "114",
     img: "https://i.pinimg.com/564x/fc/da/ff/fcdaff4d3f30005e462d0d3c31cfb691.jpg",
