@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 function Navbar() {
   // useSelector yardımı ile store.js'teki card'a ulaştık
   const { quantity } = useSelector((store) => store.card);
-  console.log(useSelector((store) => store.card));
 
   return (
     <nav>
