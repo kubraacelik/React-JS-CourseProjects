@@ -1,0 +1,34 @@
+.courseForm {
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.courseForm form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courseForm .field-group {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.courseForm .field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px !important;
+    margin-right: 10px;
+}
+
+.courseForm .field label.label {
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+
+.courseForm input {
+    width: 100%;
+}
+
+.courseForm h4.subtitle.is-3 {
+    margin-bottom: 0.75rem;
+}
