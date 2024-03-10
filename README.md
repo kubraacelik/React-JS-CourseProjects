@@ -57,6 +57,7 @@ To Do App project designed using React JS, Material UI and React Bootstrap.
 This project is a React project that creates a shopping cart application using Redux and Redux Toolkit. A Redux slice is defined and within this slice there are various actions related to the cart and state changes that are performed based on these actions. It allows the user to edit the contents of the cart, increase/decrease quantities, delete items and calculate the total price.
 ![Ekran Görüntüsü (39)](https://github.com/kubraacelik/React-JS/assets/101054783/adec3068-64f3-4384-97c5-d3a1e891aaad)
 ![Ekran Görüntüsü (40)](https://github.com/kubraacelik/React-JS/assets/101054783/060a5b46-d827-4d03-a868-ffe559c2999e)
+![Ekran görüntüsü 2024-03-10 125021](https://github.com/kubraacelik/React-JS/assets/101054783/322e1f70-3651-4482-964a-20d2a82d3575)
 ![Ekran Görüntüsü (41)](https://github.com/kubraacelik/React-JS/assets/101054783/4fb1b516-89dc-4164-9450-6075169f5173)
 
 
