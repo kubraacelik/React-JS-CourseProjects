@@ -63,7 +63,7 @@ function CourseForm() {
             />
           </div>
           <div className="field">
-            <button className="button is-primary">Kaydet</button>
+            <button className="button is-info">Kaydet</button>
           </div>
         </div>
       </form>
