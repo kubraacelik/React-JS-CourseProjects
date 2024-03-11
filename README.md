@@ -60,4 +60,9 @@ This project is a React project that creates a shopping cart application using R
 ![Ekran görüntüsü 2024-03-10 125021](https://github.com/kubraacelik/React-JS/assets/101054783/322e1f70-3651-4482-964a-20d2a82d3575)
 ![Ekran Görüntüsü (41)](https://github.com/kubraacelik/React-JS/assets/101054783/4fb1b516-89dc-4164-9450-6075169f5173)
 
+## courseslice
+The overall goal of the project is to enable users to enter course information and access this information through the Redux store. By using the useSelector and useDispatch hooks, information is retrieved from the Redux store and actions are performed. The CourseForm component contains a form to retrieve course information from the user. This form has input fields that trigger actions like changeName, changeDescription, changeCost to update the state in the Redux store. The CourseValue component contains a search box that allows the user to search for courses and the necessary Redux logic to interact with it. The CourseList component is designed as a course list component that can pull course data from the Redux store, perform a search and delete a course of the user's choice. The CourseValue component is designed as a component that searches the course data retrieved from the Redux store and summarizes the costs of these courses and prints a total amount on the screen.
+![Ekran görüntüsü 2024-03-10 193309](https://github.com/kubraacelik/React-JS/assets/101054783/9369ebee-1be7-410e-b3f4-572ca9d969f0)
+![Ekran görüntüsü 2024-03-10 193525](https://github.com/kubraacelik/React-JS/assets/101054783/f44f891a-cdc6-467b-8432-0e762485e61e)
+![Ekran görüntüsü 2024-03-10 193603](https://github.com/kubraacelik/React-JS/assets/101054783/d2e4823d-b54a-416a-a13e-d76b1a1d18e8)
 
