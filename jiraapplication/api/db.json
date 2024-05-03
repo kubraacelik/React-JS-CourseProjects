@@ -1,9 +1,9 @@
 {
   "tasks": [
     {
-      "id": "43d6",
-      "title": "Mobil Uygulama Test Otomasyonu",
-      "taskDesc": "Bir mobil uygulamanın test otomasyonunu gerçekleştirin. Uygulamanın farklı ekranları arasında gezinme, kullanıcı etkileşimleri simüle etme ve hata durumlarını test etme işlemlerini otomatize edin."
+      "title": "Mobil Uygulama Otomasyonu",
+      "taskDesc": "Bir mobil uygulamanın test otomasyonunu gerçekleştirin. Uygulamanın farklı ekranları arasında gezinme, kullanıcı etkileşimleri simüle etme ve hata durumlarını test etme işlemlerini otomatize edin.",
+      "id": "43d6"
     },
     {
       "id": "d3f0",
@@ -14,7 +14,11 @@
       "title": "E-Ticaret Sitesi Geliştirme",
       "taskDesc": " E-Ticaret web sitesi oluşturun. Müşterilerin ürünleri sepete ekleyebilmeleri, ödeme yapabilmeleri ve sipariş takibi yapabilmeleri için kullanıcı dostu bir arayüz sağlayın.",
       "id": "1a57"
+    },
+    {
+      "id": "298b",
+      "title": "Veritabanına Bağlan",
+      "taskDesc": "Video izle, öğren"
     }
-   
   ]
 }
